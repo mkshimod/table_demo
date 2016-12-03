@@ -9,7 +9,7 @@ import {  LocalDataSource   }     from "ng2-smart-table";
   providers: [ TableDataService ]
 })
 
-export class SupplierTable implements OnInit {
+export class SupplierTableComponent implements OnInit {
   settings = {
     columns: {
       year: {

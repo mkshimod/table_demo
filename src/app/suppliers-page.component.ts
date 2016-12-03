@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'suppliers-page',
   template: `<supplier-table></supplier-table>`
 })
-export class SuppliersPage implements OnInit {
+export class SuppliersPageComponent implements OnInit {
   title = 'List of Suppliers';
 
   public ngOnInit() { }
