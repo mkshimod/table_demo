@@ -6,10 +6,12 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {Ng2SmartTableModule} from "ng2-smart-table";
 import {Ng2TableModule} from "ng2-table";
+import {SupplierTable} from './supplier-table.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SupplierTable
   ],
   imports: [
     BrowserModule,
