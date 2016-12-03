@@ -10,6 +10,13 @@ import {Ng2TableModule} from "ng2-table";
 import {SupplierTable} from './supplier-table.component';
 import {SuppliersPage} from './suppliers-page.component';
 
+const appRoutes: Routes = [
+  {
+    path: 'suppliers',
+    component: SuppliersPage
+  }
+];
+
 
 @NgModule({
   declarations: [
@@ -22,7 +29,8 @@ import {SuppliersPage} from './suppliers-page.component';
     FormsModule,
     HttpModule,
     Ng2SmartTableModule,
-    Ng2TableModule
+    Ng2TableModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
