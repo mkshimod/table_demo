@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TableDataService }  from './table-data.service';
 import { Data }              from './sample-data';
+import { LocalDataSource }   from 'ng2-smart-table';
+import {Local} from "protractor/built/driverProviders";
 
 
 @Component({
@@ -11,7 +13,7 @@ import { Data }              from './sample-data';
 })
 export class AppComponent implements OnInit {
   title = 'app works!';
-  tableData: Data[] = [];
+  tableData: LocalDataSource;
   settings = {
     columns: {
       year: {
@@ -65,8 +67,11 @@ export class AppComponent implements OnInit {
   }
 
   private initTable(): void {
+    this.tableData = new LocalDataSource();
     this.tableDataService.getSampleData()
-      .then(tableData => this.tableData = tableData);
+      .then( (sampleData) => {
+        this.tableData.load(sampleData);
+      })
 
   }
 
