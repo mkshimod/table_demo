@@ -6,10 +6,11 @@ import { AppRoutingModule }     from './app-routing.module';
 import { Ng2SmartTableModule }  from "ng2-smart-table";
 import { Ng2TableModule }       from "ng2-table";
 
-import { AppComponent }         from './app.component';
-import {SupplierTableComponent} from './supplier-table.component';
-import {SuppliersPageComponent} from './suppliers-page.component';
-import {HomeComponent}          from './home.component';
+import { AppComponent }         from './app.component/app.component';
+import {SupplierTableComponent} from './supplier-table.component/supplier-table.component';
+import {SuppliersPageComponent} from './suppliers-page.component/suppliers-page.component';
+import {HomeComponent}          from './home.component/home.component';
+import {SupplierFormComponent}  from './supplier-form.component/supplier-form.component';
 
 
 
@@ -18,7 +19,8 @@ import {HomeComponent}          from './home.component';
     AppComponent,
     SupplierTableComponent,
     SuppliersPageComponent,
-    HomeComponent
+    HomeComponent,
+    SupplierFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 import {  Component, OnInit }     from '@angular/core';
-import {  TableDataService  }     from './table-data.service';
+import {  TableDataService  }     from '../table-data.service';
 import {  LocalDataSource   }     from "ng2-smart-table";
 
 @Component({
