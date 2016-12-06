@@ -9,7 +9,7 @@ import { Ng2TableModule }       from "ng2-table";
 import { AppComponent }         from './app.component/app.component';
 import {SupplierTableComponent} from './supplier-table.component/supplier-table.component';
 import {SuppliersPageComponent} from './suppliers-page.component/suppliers-page.component';
-import {HomeComponent}          from './home.component/home.component';
+import {HomePageComponent}          from './home-page.component/home-page.component';
 import {SupplierFormComponent}  from './supplier-form.component/supplier-form.component';
 
 
@@ -19,7 +19,7 @@ import {SupplierFormComponent}  from './supplier-form.component/supplier-form.co
     AppComponent,
     SupplierTableComponent,
     SuppliersPageComponent,
-    HomeComponent,
+    HomePageComponent,
     SupplierFormComponent
   ],
   imports: [
