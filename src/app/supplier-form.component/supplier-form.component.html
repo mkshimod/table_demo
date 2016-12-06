@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Service Providers Form</h1>
+  <form (ngSubmit)="onSubmit()" #supplierForm="ngForm">
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" class="form-control" id="company" required
+      [(ngModel)]="model.company" name="company">
+    </div>
+    <div class="form-group">
+      <label for="industry">Industry</label>
+      <input type="text" class="form-control" id="industry" required
+      [(ngModel)]="model.industry" name="industry">
+    </div>
+    <div class="form-group">
+      <label for="agency">Agency</label>
+      <input type="text" class="form-control" id="agency" required
+      [(ngModel)]="model.agency" name="agency">
+    </div>
+    <div class="form-group">
+      <label for="type">Type</label>
+      <input type="text" class="form-control" id="type" required
+      [(ngModel)]="model.type" name="type">
+    </div>
+    <button type="button" class="btn btn-default" (click)="newCompany()">New Company</button>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

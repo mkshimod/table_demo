@@ -4,13 +4,13 @@ import { FormsModule }          from '@angular/forms';
 import { HttpModule }           from '@angular/http';
 import { AppRoutingModule }     from './app-routing.module';
 import { Ng2SmartTableModule }  from "ng2-smart-table";
-import { Ng2TableModule }       from "ng2-table";
 
 import { AppComponent }         from './app.component/app.component';
 import {SupplierTableComponent} from './supplier-table.component/supplier-table.component';
 import {SuppliersPageComponent} from './suppliers-page.component/suppliers-page.component';
 import {HomePageComponent}          from './home-page.component/home-page.component';
 import {SupplierFormComponent}  from './supplier-form.component/supplier-form.component';
+import {ServiceProvidersPageComponent} from "./service-providers-page.component/service-providers-page.component";
 
 
 
@@ -20,7 +20,8 @@ import {SupplierFormComponent}  from './supplier-form.component/supplier-form.co
     SupplierTableComponent,
     SuppliersPageComponent,
     HomePageComponent,
-    SupplierFormComponent
+    SupplierFormComponent,
+    ServiceProvidersPageComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +29,6 @@ import {SupplierFormComponent}  from './supplier-form.component/supplier-form.co
     HttpModule,
     AppRoutingModule,
     Ng2SmartTableModule,
-    Ng2TableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

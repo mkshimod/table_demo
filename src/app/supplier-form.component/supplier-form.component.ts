@@ -11,10 +11,14 @@ export class SupplierFormComponent {
 
   submitted = false;
 
-  model = new Supplier(1, 'Company Name', 'Engineering', 'Agency Name', 'Prime Award');
+  model = new Supplier('Company Name', 'Engineering', 'Agency Name', 'Prime Award');
 
   onSubmit() {
     this.submitted = true;
+  }
+
+  newCompany() {
+    this.model = new Supplier('ANother Company Name', 'Business', 'Another Agency Name', 'Sub Award');
   }
 
   // TODO: remove this when we're done
