@@ -253,4 +253,40 @@ export const SAMPLE_SERVICEPROVIDERLIST: ServiceProviderListItem[] = [
     value: '$410'
   }
 
-]
+];
+
+export const SAMPLE_TABLEDATA = {
+  columns: {
+      year: {
+        title: 'Year'
+      },
+      company: {
+        title: 'Company'
+      },
+      industry: {
+        title: 'Industry'
+      },
+      agency: {
+        title: 'Agency'
+      },
+      type: {
+        title: 'Type'
+      },
+      city: {
+        title: 'City'
+      },
+      state: {
+        title: 'State'
+      },
+      zip: {
+        title: 'Zip Code'
+      },
+      county: {
+        title: 'County'
+      },
+      value: {
+        title: 'Value'
+      }
+  },
+  tableData: SAMPLE_SERVICEPROVIDERLIST
+}
