@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Service Providers Form</h1>
+  <form (ngSubmit)="onSubmit()" #supplierForm="ngForm">
+    {{diagnostic}}
+    <div class="form-group">
+      <label for="company">Company</label>
+      <input type="text" class="form-control" id="company" required
+      [(ngModel)]="model.companyName" name="company">
+    </div>
+    <div class="form-group">
+      <label for="hawaiiaddr">Industry</label>
+      <input type="text" class="form-control" id="hawaiiaddr" required
+      [(ngModel)]="model.HawaiiAddr" name="hawaiiaddr">
+    </div>
+    <div class="form-group">
+      <label for="hqaddr">Agency</label>
+      <input type="text" class="form-control" id="hqaddr" required
+             [(ngModel)]="model.HQAddr" name="hqaddr">
+    </div>
+    <div class="form-group">
+      <label for="conusrev">CONUS</label>
+      <input type="text" class="form-control" id="conusrev" required
+      [(ngModel)]="model.ContUSRev" name="conusrev">
+    </div>
+    <div class="form-group">
+    <label for="hawaiirev">HI State</label>
+    <input type="text" class="form-control" id="hawaiirev" required
+           [(ngModel)]="model.HIRev" name="hawaiirev">
+  </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

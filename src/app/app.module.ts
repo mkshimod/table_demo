@@ -5,12 +5,13 @@ import { HttpModule }           from '@angular/http';
 import { AppRoutingModule }     from './app-routing.module';
 import { Ng2SmartTableModule }  from "ng2-smart-table";
 
-import { AppComponent }         from './app.component/app.component';
-import {SupplierTableComponent} from './supplier-table.component/supplier-table.component';
-import {SuppliersPageComponent} from './suppliers-page.component/suppliers-page.component';
-import {HomePageComponent}          from './home-page.component/home-page.component';
-import {SupplierFormComponent}  from './supplier-form.component/supplier-form.component';
-import {ServiceProvidersPageComponent} from "./service-providers-page.component/service-providers-page.component";
+import { AppComponent }         from './app/app.component';
+import {SupplierTableComponent} from './supplier-table/supplier-table.component';
+import {SuppliersPageComponent} from './suppliers-page/suppliers-page.component';
+import {HomePageComponent}          from './home-page/home-page.component';
+import {SupplierFormComponent}  from './supplier-form/supplier-form.component';
+import {ServiceProvidersPageComponent} from "./service-providers-page/service-providers-page.component";
+import {ServiceProviderDetailComponent} from './service-provider-detail/service-provider-detail.component';
 
 
 
@@ -21,7 +22,8 @@ import {ServiceProvidersPageComponent} from "./service-providers-page.component/
     SuppliersPageComponent,
     HomePageComponent,
     SupplierFormComponent,
-    ServiceProvidersPageComponent
+    ServiceProvidersPageComponent,
+    ServiceProviderDetailComponent,
   ],
   imports: [
     BrowserModule,

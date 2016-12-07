@@ -1,9 +1,9 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {SuppliersPageComponent}         from './suppliers-page.component/suppliers-page.component';
-import {HomePageComponent}              from './home-page.component/home-page.component';
-import {ServiceProvidersPageComponent}  from './service-providers-page.component/service-providers-page.component';
+import {SuppliersPageComponent}         from './suppliers-page/suppliers-page.component';
+import {HomePageComponent}              from './home-page/home-page.component';
+import {ServiceProvidersPageComponent}  from './service-providers-page/service-providers-page.component';
 
 const appRoutes: Routes = [
   {

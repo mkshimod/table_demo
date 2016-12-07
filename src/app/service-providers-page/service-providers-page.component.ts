@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'service-providers-page',
-  template: `<supplier-form></supplier-form>`
+  templateUrl: './service-providers-page.component.html'
 })
 
 export class ServiceProvidersPageComponent { }

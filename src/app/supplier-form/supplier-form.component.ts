@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Supplier } from '../supplier';
+import { ServiceProviderDetail } from '../mock-data/service-provider-detail';
 
 @Component({
   selector: 'supplier-form',
@@ -11,14 +11,10 @@ export class SupplierFormComponent {
 
   submitted = false;
 
-  model = new Supplier('Company Name', 'Engineering', 'Agency Name', 'Prime Award');
+  model = new ServiceProviderDetail('RSI', '155 Kapalulu Pl', '155 Kapaululu Pl', 45678, 26987867);
 
   onSubmit() {
     this.submitted = true;
-  }
-
-  newCompany() {
-    this.model = new Supplier('ANother Company Name', 'Business', 'Another Agency Name', 'Sub Award');
   }
 
   // TODO: remove this when we're done

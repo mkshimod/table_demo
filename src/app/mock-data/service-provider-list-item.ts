@@ -1,4 +1,4 @@
-export class Data {
+export class ServiceProviderListItem {
   year: number;
   company: string;
   industry: string;
@@ -11,7 +11,7 @@ export class Data {
   value: string;
 }
 
-export const SAMPLEDATA: Data[] = [
+export const SAMPLE_SERVICEPROVIDERLIST: ServiceProviderListItem[] = [
   {
     year: 2013,
     company: '1 Industrial Source, LLC',
