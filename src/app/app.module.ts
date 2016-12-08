@@ -6,8 +6,8 @@ import { AppRoutingModule }     from './app-routing.module';
 import { Ng2SmartTableModule }  from "ng2-smart-table";
 
 import { AppComponent }         from './app/app.component';
-import {SupplierTableComponent} from './supplier-table/supplier-table.component';
-import {SuppliersPageComponent} from './suppliers-page/suppliers-page.component';
+import {DataDisplayTableComponent} from './data-display-table/data-display-table.component';
+import {SuppliersPageComponent} from './supplier-directory-page/supplier-directory-page.component';
 import {HomePageComponent}          from './home-page/home-page.component';
 import {SupplierFormComponent}  from './supplier-form/supplier-form.component';
 import {ServiceProvidersPageComponent} from "./service-providers-page/service-providers-page.component";
@@ -18,7 +18,7 @@ import {ServiceProviderDetailComponent} from './service-provider-detail/service-
 @NgModule({
   declarations: [
     AppComponent,
-    SupplierTableComponent,
+    DataDisplayTableComponent,
     SuppliersPageComponent,
     HomePageComponent,
     SupplierFormComponent,

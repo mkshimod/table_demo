@@ -1,7 +1,7 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {SuppliersPageComponent}         from './suppliers-page/suppliers-page.component';
+import {SuppliersPageComponent}         from './supplier-directory-page/supplier-directory-page.component';
 import {HomePageComponent}              from './home-page/home-page.component';
 import {ServiceProvidersPageComponent}  from './service-providers-page/service-providers-page.component';
 

@@ -5,11 +5,12 @@ import { SAMPLE_TABLEDATA } from '../mock-data/service-provider-list-item';
 
 @Component({
   selector: 'suppliers-page',
-  templateUrl: './suppliers-page.component.html',
+  templateUrl: 'supplier-directory-page.component.html',
+  styleUrls: ['supplier-directory-page.component.less'],
   providers: [ TableDataService ]
 })
 export class SuppliersPageComponent implements OnInit {
-  title = 'List of Service Providers';
+  title = 'DoD Spending';
   description = 'Short description of the page.';
   tableData = SAMPLE_TABLEDATA;
   rowData: any;

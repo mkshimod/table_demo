@@ -2,12 +2,12 @@ import {  Component, Input, OnInit, SimpleChanges }     from '@angular/core';
 import {  LocalDataSource   }     from "ng2-smart-table";
 
 @Component({
-  selector: 'supplier-table',
+  selector: 'data-display-table',
   template: `<ng2-smart-table [settings]="tableSettings" [source]="data"></ng2-smart-table>`,
   styleUrls: [],
 })
 
-export class SupplierTableComponent implements OnInit {
+export class DataDisplayTableComponent implements OnInit {
   // @Input() tableDataPromise: Promise<any>;
   @Input() tableSettings: any;
   @Input() tableData: any;

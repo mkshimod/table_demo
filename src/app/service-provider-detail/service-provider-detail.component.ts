@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core'
-import { ServiceProviderDetail } from '../mock-data/service-provider-detail';
 
 
 @Component({
@@ -8,8 +7,7 @@ import { ServiceProviderDetail } from '../mock-data/service-provider-detail';
 })
 
 export class ServiceProviderDetailComponent {
-@Input()
-  serviceProvider: ServiceProviderDetail;
+@Input() ServiceProvider: any;
 
 
 }
