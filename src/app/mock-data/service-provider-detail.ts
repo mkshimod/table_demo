@@ -1,38 +1,38 @@
 export class Supplier {
-  supplierName: string,
-  subk: number,
-  desc: string
-};
+  supplierName: string;
+  subk: number;
+  desc: string;
+}
 
 export class Contract {
-  id: string,
-  cust: string,
+  id: string;
+  cust: string;
   value: {
     total: number,
     hawaii: number
-  },
-  employed: number,
+  };
+  employed: number;
   suppliers: Supplier[]
-};
+}
 
 export class Address {
-  street: string,
-  city: string,
-  state: string,
-  zip: string,
-  hq: boolean
+  street: string;
+  city: string;
+  state: string;
+  zip: string;
+  hq: boolean;
 };
 
 export class CompanyData {
-  id: number,
-  name: string,
-  address: Address[],
+  id: number;
+  name: string;
+  address: Address[];
   revenue: {
     hawaii: number,
     conus: number
-  },
+  };
   contracts: Contract[]
-};
+}
 
 
 export const SampleRaytheonData: CompanyData = {
