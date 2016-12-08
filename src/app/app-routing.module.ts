@@ -1,18 +1,18 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import {SuppliersPageComponent}         from './supplier-directory-page/supplier-directory-page.component';
-import {HomePageComponent}              from './home-page/home-page.component';
-import {ServiceProvidersPageComponent}  from './service-providers-page/service-providers-page.component';
+import { SvcDirPageComponent }         from './svcDirPage/svcDirPage.component';
+import {HomePageComponent}              from './homePage/homePage.component';
+import {SvcDetailPageComponent}  from './svcDetailPage/svcDetailPage.component';
 
 const appRoutes: Routes = [
   {
-    path: 'suppliers',
-    component: SuppliersPageComponent
+    path: 'svc-dir-page',
+    component: SvcDirPageComponent
   },
   {
-    path: 'service-providers',
-    component: ServiceProvidersPageComponent
+    path: 'svc-detail-page',
+    component: SvcDetailPageComponent
   },
   {
     path: '',

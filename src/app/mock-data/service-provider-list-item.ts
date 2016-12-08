@@ -265,7 +265,7 @@ export const SAMPLE_TABLEDATA = {
         title: 'Company'
       },
       industry: {
-        title: 'Industry'
+        title: 'NAICS/Industry'
       },
       agency: {
         title: 'Agency'

@@ -6,12 +6,12 @@ import { AppRoutingModule }     from './app-routing.module';
 import { Ng2SmartTableModule }  from "ng2-smart-table";
 
 import { AppComponent }         from './app/app.component';
-import {DataDisplayTableComponent} from './data-display-table/data-display-table.component';
-import {SuppliersPageComponent} from './supplier-directory-page/supplier-directory-page.component';
-import {HomePageComponent}          from './home-page/home-page.component';
-import {SupplierFormComponent}  from './supplier-form/supplier-form.component';
-import {ServiceProvidersPageComponent} from "./service-providers-page/service-providers-page.component";
-import {ServiceProviderDetailComponent} from './service-provider-detail/service-provider-detail.component';
+import {DataDisplayTableComponent} from './dataDisplayTable/dataDisplayTable.component';
+import {SvcDirPageComponent} from './svcDirPage/svcDirPage.component';
+import {HomePageComponent}          from './homePage/homePage.component';
+import {SupplierFormComponent}  from './svcProviderForm/svcProviderForm.component';
+import {SvcDetailPageComponent} from "./svcDetailPage/svcDetailPage.component";
+import {ServiceProviderDetailComponent} from './svcDetail/svcDetail.component';
 
 
 
@@ -19,10 +19,10 @@ import {ServiceProviderDetailComponent} from './service-provider-detail/service-
   declarations: [
     AppComponent,
     DataDisplayTableComponent,
-    SuppliersPageComponent,
+    SvcDirPageComponent,
     HomePageComponent,
     SupplierFormComponent,
-    ServiceProvidersPageComponent,
+    SvcDetailPageComponent,
     ServiceProviderDetailComponent,
   ],
   imports: [

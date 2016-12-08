@@ -3,8 +3,8 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'supplier-form',
-  templateUrl: 'supplier-form.component.html'
+  selector: 'svc-provider-form',
+  templateUrl: 'svcProviderForm.component.html'
 })
 
 export class SupplierFormComponent {

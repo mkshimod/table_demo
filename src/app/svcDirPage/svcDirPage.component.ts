@@ -4,12 +4,12 @@ import { SAMPLE_TABLEDATA } from '../mock-data/service-provider-list-item';
 
 
 @Component({
-  selector: 'suppliers-page',
-  templateUrl: 'supplier-directory-page.component.html',
-  styleUrls: ['supplier-directory-page.component.less'],
+  selector: 'svc-dir-page',
+  templateUrl: 'svcDirPage.component.html',
+  styleUrls: ['svcDirPage.component.less'],
   providers: [ TableDataService ]
 })
-export class SuppliersPageComponent implements OnInit {
+export class SvcDirPageComponent implements OnInit {
   title = 'DoD Spending';
   description = 'Short description of the page.';
   tableData = SAMPLE_TABLEDATA;
@@ -24,6 +24,9 @@ export class SuppliersPageComponent implements OnInit {
       add: false,
       edit: false,
       delete: false
+    },
+    pager: {
+      perPage: 12
     }
   };
 
