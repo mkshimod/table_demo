@@ -15,9 +15,12 @@
   <div class="ui middle aligned divivded list">
       <div *ngFor="let address of svcProviderAddresses" class="item">
         <div class="right floated content">
-          <div class="ui button">Edit</div>
+          <div class="ui icon button"><i class="edit icon"></i></div>
         </div>
         <div class="content">
+          <div class="hq">
+            <span *ngIf="address.hq">HQ</span>
+          </div>
           {{address.street}}, {{address.city}}, {{address.state}} {{address.zip}}
         </div>
       </div>
