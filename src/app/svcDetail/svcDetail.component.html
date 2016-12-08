@@ -1,10 +1,25 @@
-<div class="ui segment">
-  <h3>Company Name</h3>
+<h3 xmlns="http://www.w3.org/1999/html">Company Name</h3>
+<div class="ui segment wrapper">
   <div class="ui grid">
     <div class="three column row">
       <div class="column">Hawaii Address</div>
       <div class="column">HQ Address</div>
       <div class="column">Revenue</div>
     </div>
+  </div>
+</div>
+
+<div class="ui segment wrapper">
+  <h4>Addresses</h4>
+  <!-- List will be ngFor in the future -->
+  <div class="ui middle aligned divivded list">
+      <div *ngFor="let address of svcProviderAddresses" class="item">
+        <div class="right floated content">
+          <div class="ui button">Edit</div>
+        </div>
+        <div class="content">
+          {{address.street}}, {{address.city}}, {{address.state}} {{address.zip}}
+        </div>
+      </div>
   </div>
 </div>
