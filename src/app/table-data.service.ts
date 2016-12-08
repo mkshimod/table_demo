@@ -1,10 +1,10 @@
 import { Injectable }   from '@angular/core';
 
-import { ServiceProviderListItem, SAMPLE_SERVICEPROVIDERLIST } from './mock-data/service-provider-list-item';
+import { SAMPLE_TABLEDATA } from './mock-data/service-provider-list-item';
 
 @Injectable()
 export class TableDataService {
-  getSampleData(): Promise<ServiceProviderListItem[]> {
-    return Promise.resolve(SAMPLE_SERVICEPROVIDERLIST);
+  getSampleData(): Promise<any> {
+    return Promise.resolve(SAMPLE_TABLEDATA);
   }
 }

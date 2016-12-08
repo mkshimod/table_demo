@@ -1,71 +1,30 @@
-import {  Component, OnInit }     from '@angular/core';
-import {  TableDataService  }     from '../table-data.service';
+import {  Component, Input, OnInit, SimpleChanges }     from '@angular/core';
 import {  LocalDataSource   }     from "ng2-smart-table";
 
 @Component({
   selector: 'supplier-table',
-  template: `<ng2-smart-table [settings]="settings" [source]="tableData"></ng2-smart-table>`,
+  template: `<ng2-smart-table [settings]="tableSettings" [source]="data"></ng2-smart-table>`,
   styleUrls: [],
-  providers: [ TableDataService ]
 })
 
 export class SupplierTableComponent implements OnInit {
-  settings = {
-    columns: {
-      year: {
-        title: 'Year'
-      },
-      company: {
-        title: 'Company'
-      },
-      industry: {
-        title: 'Industry'
-      },
-      agency: {
-        title: 'Agency'
-      },
-      type: {
-        title: 'Type'
-      },
-      city: {
-        title: 'City'
-      },
-      state: {
-        title: 'State'
-      },
-      zip: {
-        title: 'Zip Code'
-      },
-      county: {
-        title: 'County'
-      },
-      value: {
-        title: 'Value'
-      }
-    },
-    hideSubHeader: true,
-    actions: {
-      columnTitle: false,
-      add: false,
-      edit: false,
-      delete: false
-    }
-  };
-  tableData: LocalDataSource;
+  // @Input() tableDataPromise: Promise<any>;
+  @Input() tableSettings: any;
+  @Input() tableData: any;
 
-  constructor(private tableDataService: TableDataService) { }
+  data: LocalDataSource;
+
+  constructor() {}
 
 
   public ngOnInit() {
+    this.data = new LocalDataSource();
     this.initTable();
   }
 
+
   private initTable(): void {
-    this.tableData = new LocalDataSource();
-    this.tableDataService.getSampleData()
-      .then( (sampleData) => {
-        this.tableData.load(sampleData);
-      })
+    this.data.load(this.tableData);
 
   }
 }

@@ -11,6 +11,7 @@ export class ServiceProviderListItem {
   value: string;
 }
 
+
 export const SAMPLE_SERVICEPROVIDERLIST: ServiceProviderListItem[] = [
   {
     year: 2013,
@@ -288,5 +289,5 @@ export const SAMPLE_TABLEDATA = {
         title: 'Value'
       }
   },
-  tableData: SAMPLE_SERVICEPROVIDERLIST
-}
+  tableData: SAMPLE_SERVICEPROVIDERLIST,
+};
